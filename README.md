@@ -1,6 +1,6 @@
-# node_ong_animais
+# node_hamburgueria
 
-First Project Ong Animals - Node JS
+First Project Hamburgueria - Node JS
 
 # Pré - Requisitos Globais
 
