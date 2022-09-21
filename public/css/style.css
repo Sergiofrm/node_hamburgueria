@@ -1,12 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Rubik:wght@500&family=Shadows+Into+Light+Two&display=swap');
 
 /* Montando a Variavel */
 
 :root {
   --pagebg: #fff; /* Cor de Fundo - Branca*/
-  --main: #8257e5;
+  --main: #e7272d;
   --lightbg: #fff;
-  --bglink: rgba(0, 0, 0, 0.3);
+  --bglink: rgba(139, 130, 130, 0.3);
+  --cor_preto: radial-gradient(
+    circle at 50% -20.71%,
+    #1e3e46 0,
+    #1f393e 8.33%,
+    #1f3336 16.67%,
+    #202d2e 25%,
+    #202727 33.33%,
+    #1f2020 41.67%,
+    #1d1819 50%,
+    #1b0f13 58.33%,
+    #19040e 66.67%,
+    #160009 75%,
+    #120005 83.33%,
+    #0c0003 91.67%,
+    #030003 100%
+  );
 }
 
 * {
@@ -15,7 +34,7 @@
 }
 
 body {
-  font-family: Poppins;
+  font-family: Arvo;
   background-color: var(--pagebg);
 }
 
@@ -37,19 +56,19 @@ header .container {
 
 header a {
   text-decoration: none;
-  color: var(--main);
-  font-family: Poppins;
+  color: var(--cor_preto);
+  font-family: Arvo;
 }
 header input {
   padding: 8px 10px;
   font-size: 16px;
   width: 100%;
   border: 1px solid var(--main);
-  font-family: Poppins;
+  font-family: Arvo;
 }
 
 nav {
-  background: var(--main);
+  background: var(--cor_preto);
   color: var(--lightbg);
   padding: 20px 0px;
 }
@@ -67,7 +86,7 @@ ul li a {
   text-decoration: none; /* Retirar os sublinhados do texto */
   padding: 5px 15px;
   border-radius: 10px; /* Arrendondar as bordas */
-  font-family: Poppins;
+  font-family: Arvo;
 }
 
 ul li.active a,
@@ -77,20 +96,32 @@ ul li:hover a {
 
 .banner {
   height: 400px;
-
-  background-image: url('../img/imagens/banner_geral.jpg');
   background-size: cover;
   background-position: center;
-  /* text-shadow: 5px 5px 4px var(--lightbg); -- Sombreamento no texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--pagebg);
+  font-size: 64px;
+  font-weight: bold;
+  text-shadow: 195px 295px 94px var(--cor_preto);
+  font-family: 'Arvo';
+  margin: 0px 0px 0px 0px;
+  line-height: 1.2;
+  letter-spacing: 0px;
 }
 
 h2 {
   color: var(--main);
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 40px;
+  font-style: normal;
+  font-family: 'Shadows Into Light Two', handwriting;
+  line-height: 1.6;
+  letter-spacing: 1px;
 }
 
 .list {
@@ -104,7 +135,7 @@ h2 {
 
   height: 250px;
   border-radius: 10px;
-  border: 5px solid rgb(213, 193, 238);
+  /* border: 5px solid rgb(213, 193, 238); */
 }
 
 .item-img:hover {
@@ -131,4 +162,5 @@ footer {
   font-weight: bold;
   color: var(--lightbg);
   background-color: var(--main);
+  font-family: Arvo;
 }

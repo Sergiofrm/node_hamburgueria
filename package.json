@@ -1,25 +1,27 @@
 {
-  "name": "node_ong_animais",
+  "name": "node_hamburgueria",
   "version": "1.0.0",
-  "description": "First Project Ong Animals - Node JS",
+  "description": "First ProjectHamburgueria - Node JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sergiofrm/node_ong_animais.git"
+    "url": "git+https://github.com/Sergiofrm/node_hamburgueria.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sergiofrm/node_ong_animais/issues"
+    "url": "https://github.com/Sergiofrm/node_hamburgueria/issues"
   },
-  "homepage": "https://github.com/Sergiofrm/node_ong_animais#readme",
+  "homepage": "https://github.com/Sergiofrm/node_hamburgueria#readme",
   "dependencies": {
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mustache-express": "^1.3.2",
+    "nodemon": "^2.0.20",
     "typescript": "^4.8.3"
   },
   "devDependencies": {

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Projeto ONG - Introdução Node JS - 29/08/2022 -->
+<html lang="pt-br">
+  <head>
+    <title>Global Burger</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shorcut icon" href="../img/imagens/favicon.ico" type="img/x-icon" />
+  </head>
+  <header>
+    <body>
+    <div class="container">
+      <a href="/">Global Burger</a>
+      <form action="/search" method="get">
+        <input type="search" name="busca" placeholder="Pesquise por Produto" />
+      </form>
+    </div>
+  </header>
+    <nav>
+      <ul>
+        <li class="{{#menu.all}}active{{/menu.all}}"><a href="/">Todos</a></li>
+        <li class="{{#menu.hamburguer}}active{{/menu.hamburguer}}"><a href="/hamburguer">Hamburguer</a></li>
+        <li class="{{#menu.bebidas}}active{{/menu.bebidas}}"><a href="/bebidas">Bebidas</a></li>
+        <li class="{{#menu.doces}}active{{/menu.doces}}"><a href="/doces">Doces</a></li>
+      </ul>
+    </nav>
