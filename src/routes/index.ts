@@ -1,6 +1,6 @@
 import { Router} from "express";
-import* as pagecontrollers from "../controllers/pagecontrollers"
-import* as searchcontrollers from "../controllers/searchcontrollers"
+import * as pagecontrollers from "../controllers/pagecontrollers"
+import * as searchcontrollers from "../controllers/searchcontrollers"
 
 
 const router = Router()

@@ -4,12 +4,14 @@
     <h2 class="title_logo">"{{title}} Disponivéis"</h2>  
 {{/banner}}
     <div class="container list">
-      <div class="item">
-        <img src="img/imagens/hamb1.jpg" class="item-img" alt="Cat Burguer">
-         <div class="item-name">Burguer Cat</div>
-        <div class="item-color">Cor : Preto, Amarelo </div>
-        <div class="item-sexo">Sexo : 2 Carnes </div>
-      </div>  
+
+      {{#list}}
+        <div class="item">
+          <img src="img/{{image}}" class="item-img">
+          <div class="item-name">{{name}}</div>
+          <div class="item-color">{{color}} </div>
+        </div>
+      {{/list}}   
     </div>  
 
 {{>partials/footer}}

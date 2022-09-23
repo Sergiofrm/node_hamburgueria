@@ -1,25 +1,31 @@
 import {Request,Response} from "express"
 import { createMenuObject } from "../helpers/createMenuObject"
+import { product } from "../models/produtos"
 
 export const home = (req:Request, res:Response)=>{
-  res.render("pages/page",{
+  let list = product.getAll();
 
+  res.render("pages/page",{
     menu: createMenuObject("all"),
     banner:{
       title:"Todos os Produtos",
       background:"b2.jpg",
     },
-  })
-}
+    list,
+  });
+};
 export const hamburguer =(req:Request,res:Response)=>{
+
   res.render("pages/page",{
     menu: createMenuObject("hamburguer"),
     banner:{
       title:"Hamburguer",
       background:"banner_hamburguer.jpg"
-    }
-  })
-}
+    },
+    
+
+  });
+};
 export const bebidas = (req:Request,res:Response)=>{
   res.render("pages/page",{
     menu: createMenuObject("bebidas"),
@@ -27,8 +33,8 @@ export const bebidas = (req:Request,res:Response)=>{
       title:"Bebidas",
       background:"drinks-big.jpg"
     }
-  })
-}
+  });
+};
 export const doces = (req:Request, res:Response)=>{
   res.render("pages/page",{
     menu: createMenuObject("doces"),
@@ -36,5 +42,5 @@ export const doces = (req:Request, res:Response)=>{
       title:"Doces",
       background:"doce2.jpg"
     }
-  })
-}
+  });
+};
