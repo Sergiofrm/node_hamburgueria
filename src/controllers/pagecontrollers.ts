@@ -15,6 +15,7 @@ export const home = (req:Request, res:Response)=>{
   });
 };
 export const hamburguer =(req:Request,res:Response)=>{
+  let list = product.getFromType("hamburguer");
 
   res.render("pages/page",{
     menu: createMenuObject("hamburguer"),
@@ -22,25 +23,30 @@ export const hamburguer =(req:Request,res:Response)=>{
       title:"Hamburguer",
       background:"banner_hamburguer.jpg"
     },
-    
+    list,
 
   });
 };
 export const bebidas = (req:Request,res:Response)=>{
+  let list = product.getFromType("bebidas");
   res.render("pages/page",{
     menu: createMenuObject("bebidas"),
     banner:{
       title:"Bebidas",
       background:"drinks-big.jpg"
-    }
+    },
+    list,
   });
 };
 export const doces = (req:Request, res:Response)=>{
+  let list = product.getFromType("doces");
   res.render("pages/page",{
     menu: createMenuObject("doces"),
     banner:{
       title:"Doces",
       background:"doce2.jpg"
-    }
+    },
+    list,
+    
   });
 };

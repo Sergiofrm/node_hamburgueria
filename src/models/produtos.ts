@@ -137,8 +137,8 @@ const data: product[] = [
 
 ];
 
-export const product ={
-  getAll :()=>{
+export const product = {
+  getAll :() => {
     return data;
   },
 

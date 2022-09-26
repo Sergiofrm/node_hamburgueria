@@ -156,6 +156,7 @@ h2 {
 }
 
 footer {
+  margin-top: 30px;
   border-top: 2px solid var(--main);
   padding: 20px 0px;
   text-align: center;
