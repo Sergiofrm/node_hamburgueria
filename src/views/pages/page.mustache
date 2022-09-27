@@ -4,7 +4,7 @@
     <h2 class="title_logo">"{{title}} Disponivéis"</h2>  
 {{/banner}}
     <div class="container list">
-
+{{! "Função das paginas - Img/Busca" }}
       {{#list}}
         <div class="item">
           <img src="img/{{image}}" class="item-img">
@@ -13,5 +13,13 @@
         </div>
       {{/list}}   
     </div>  
+    {{! "Se ERROR na pagina/Não encontrado" }}
+    {{^list}}
+      <div class ="container no-list">
+      <h2>OPS! Produto Não Encontrado</h2>
+      <img src="img/atencao2.jpg">
+      
+       </div>
+    {{/list}}
 
 {{>partials/footer}}

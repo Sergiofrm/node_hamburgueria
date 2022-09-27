@@ -44,6 +44,13 @@ body {
   margin: auto;
 }
 
+.container img {
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
 header {
   font-size: 28px;
   padding: 10px 0px;
@@ -129,30 +136,38 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Dividir imagem por linha  */
   gap: 20px;
+  margin-bottom: 5px;
 }
 
 .item-img {
-  width: 250px;
+  width: 180px;
 
-  height: 250px;
+  height: 180px;
   border-radius: 10px;
   /* border: 5px solid rgb(213, 193, 238); */
 }
 
 .item-img:hover {
   transform: scale(1.1);
+  border: 3px solid var(--main);
 }
 
 .item-name {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 5px;
+  margin-left: 30px;
+  font-family: Arvo;
 }
 
 .item-color,
 .item-sexo {
   font-size: 14px;
+  margin-left: 30px;
+  font-style: normal;
+  font-family: Arvo;
+  color: rgb(68, 67, 67);
 }
 
 footer {
@@ -175,4 +190,41 @@ footer {
   padding: 10px 0px;
   width: 75px;
   height: 70px;
+}
+.btn {
+  margin-top: 10px;
+  margin: auto;
+  display: block;
+  width: 300px;
+}
+
+.btn-cs {
+  margin: auto;
+  width: 300px;
+  height: 40px;
+  background-color: var(--main);
+  font-size: 18px;
+  font-family: 'Shadows Into Light Two', handwriting;
+  border: 1px solid var(--lightbg);
+}
+
+.btn-cs a {
+  text-decoration: none;
+  color: var(--lightbg);
+  width: 300px;
+  height: 40px;
+  margin: auto;
+}
+.btn :active {
+  background-color: #ffbf00;
+}
+
+.busca {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.busca:hover {
+  border-radius: 20px;
+  border: 3px solid var(--main);
 }

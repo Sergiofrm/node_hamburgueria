@@ -13,6 +13,7 @@ let list = product.getFromName(query);
   res.render('pages/page',{
     menu: createMenuObject(''),
     list,
+    query, /* "Item Digitado da variavel" */
 
   });
 };
