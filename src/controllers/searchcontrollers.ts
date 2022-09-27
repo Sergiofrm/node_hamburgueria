@@ -7,6 +7,13 @@ export const search = (req:Request,res:Response)=>{
   /* Função para pegar a string de busca / Pesquisar */
 let query: string = req.query.busca as string;
 
+/* "Condição se apertar o enter na busca , ele vai redirecionar para a HOME" */
+if (!query){
+  res.redirect('/');
+  return;
+}
+
+
 let list = product.getFromName(query);
 
 

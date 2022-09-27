@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Shadows+Into+Light+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Rubik:wght@500&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
 
 /* Montando a Variavel */
 
@@ -109,10 +110,11 @@ ul li:hover a {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: rgb(43, 42, 42) 3px 5px;
   color: var(--pagebg);
   font-size: 64px;
   font-weight: bold;
-  text-shadow: 195px 295px 94px var(--cor_preto);
+
   font-family: 'Arvo';
   margin: 0px 0px 0px 0px;
   line-height: 1.2;
@@ -130,6 +132,11 @@ h2 {
   font-family: 'Shadows Into Light Two', handwriting;
   line-height: 1.6;
   letter-spacing: 1px;
+}
+
+.title_logo {
+  font-size: 30px;
+  font-family: 'Shadows Into Light Two', cursive;
 }
 
 .list {
