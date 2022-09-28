@@ -235,3 +235,57 @@ footer {
   border-radius: 20px;
   border: 3px solid var(--main);
 }
+
+@media (max-width: 850px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  header input {
+    margin-right: 20px;
+  }
+  hedader a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner {
+    height: 250px;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .item-color,
+  .item-name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  header .container {
+    flex-direction: column;
+  }
+
+  header input {
+    max-width: 100%;
+  }
+
+  img.item-img1 {
+    display: none;
+  }
+  a {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
