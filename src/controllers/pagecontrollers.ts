@@ -9,7 +9,7 @@ export const home = (req:Request, res:Response)=>{
     menu: createMenuObject("all"),
     banner:{
       title:"Todos os Produtos",
-      background:"b2.jpg",
+      background:"banner_oficial.jpg",
     },
     list,
   });
@@ -17,7 +17,7 @@ export const home = (req:Request, res:Response)=>{
 export const hamburguer =(req:Request,res:Response)=>{
   let list = product.getFromType("hamburguer");
 
-  res.render("pages/page",{
+  res.render("pages/page",{ 
     menu: createMenuObject("hamburguer"),
     banner:{
       title:"Hamburguer",
@@ -43,10 +43,12 @@ export const doces = (req:Request, res:Response)=>{
   res.render("pages/page",{
     menu: createMenuObject("doces"),
     banner:{
-      title:"Doces",
+      title:"Sobremesas",
       background:"doce2.jpg"
     },
     list,
     
   });
 };
+
+
